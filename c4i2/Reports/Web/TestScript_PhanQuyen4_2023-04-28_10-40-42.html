@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Phân Quyền</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<!--    Set action kiá»ƒu dÃ¡ng cho button View Image-->
+    <script>
+        function openImage(path) {
+            var img = new Image();
+            img.src = path;
+            var width = img.width;
+            var height = img.height;
+            var left = (screen.width/2)-(width/2);
+            var top = (screen.height/2)-(height/2);
+            window.open(path, 'Image', `width=${width},height=${height},left=${left},top=${top}`);
+        }
+    </script>
+    <style>
+        .view-image-btn {
+            background-color: #30b8b3;
+            border: 4px double #E0FFFF;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .view-image-btn:hover {
+            background-color: #40E0D0;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Report Phân Quyền</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-04-28 10:40:42</p>
+                <p class='attribute'><strong>Duration: </strong>164.09 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 4</p>
+            </div>
+            <div class="col-xs-4">
+                <p class='attribute'><strong>Chart:</strong></p>
+                <canvas id="myChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                  var ctx = document.getElementById('myChart').getContext('2d');
+                  var myChart = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                        labels: ['Pass', 'Fail', 'Error', 'Skip'],
+                        datasets: [{
+                          label: 'Test Results',
+                           data: [
+                           4,
+                           0,
+                           0,
+                           0,
+                           ],
+                          backgroundColor: [
+                            'rgba(46, 204, 113, 1)',
+                            'rgba(231, 76, 60, 1)',
+                            'rgba(243, 156, 18, 1)',
+                            'rgba(149, 165, 166, 1)'
+
+                          ],
+                          borderWidth: 1,
+                          borderColor: [
+                            'green',
+                            'red',
+                            'orange',
+                            'gray'
+                          ]
+                        }]
+                      },
+                      options: {
+                         plugins: {
+                            tooltip: {
+                              callbacks: {
+                                label: function(context){
+                                  var data = context.dataset.data,
+                                      label = context.label,
+                                      currentValue = context.raw,
+                                      total = 0;
+
+                                  for( var i = 0; i < data.length; i++ ){
+                                    total += data[i];
+                                  }
+                                  var percentage = parseFloat((currentValue/total*100).toFixed(1));
+
+                                  return label + ": " +currentValue + ' (' + percentage + '%)';
+                                }
+                              }
+                            }
+                          },
+                        offset: 40,
+                        responsive: true,
+                        legend: {
+                          position: 'bottom',
+                          labels: {
+                            boxWidth: 1
+                          }
+                        }
+                      }
+                    });
+                </script>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.FunctionEx.TestPhanQuyen.TestPhanQuyen</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_checkOffCreateVuViec</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Step 6: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>Đã thiết lập quyền VỤ VIỆC/QUẢN LÝ/Tạo trạng thái False thành công <br>
+
+<div><img src="./ImageError/error_ImageSetPermissionSuccess_2023-04-28_10-41-22.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+
+<div><img src="./ImageError/error_checkOnVuViecPass_2023-04-28_10-41-48.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_checkOffTaiNguyenVaTinhNang</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Step 6: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>Đã thiết lập quyền TÀI NGUYÊN VÀ TÍNH NĂNG/Xem trạng thái False thành công <br>
+
+<div><img src="./ImageError/error_ImageSetPermissionSuccess_2023-04-28_10-42-04.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+Khong tim thay phan tu xpath sau: //div[contains(text(),"Khai thác bản đồ")]
+<div><img src="./ImageError/error_clickObj_2023-04-28_10-42-25.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+
+<div><img src="./ImageError/error_checkOnVuViecPass_2023-04-28_10-42-38.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_checkOnCreateVuViec</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Step 6: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>Đã thiết lập quyền VỤ VIỆC/QUẢN LÝ/Tạo trạng thái True thành công <br>
+
+<div><img src="./ImageError/error_ImageSetPermissionSuccess_2023-04-28_10-42-56.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+Đã tải lại trang 1 lần
+
+<div><img src="./ImageError/error_checkOnVuViecPass_2023-04-28_10-43-15.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_checkOnTaiNguyenVaTinhNang</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Step 6: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>Đã thiết lập quyền TÀI NGUYÊN VÀ TÍNH NĂNG/Xem trạng thái True thành công <br>
+
+<div><img src="./ImageError/error_ImageSetPermissionSuccess_2023-04-28_10-43-32.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+
+<div><img src="./ImageError/error_checkOnVuViecPass_2023-04-28_10-43-48.png" alt="Error screenshot" style="width:300px;height:200px;"></div>
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 4 -- Duration: 164.09 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>

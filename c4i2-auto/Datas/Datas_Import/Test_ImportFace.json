@@ -1,0 +1,59 @@
+{
+  "test_ImportFaceSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Theo dõi",
+          "Value": "Theo dõi FS AT"
+        },
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachthuvienmat_AT.xlsx",
+          "Value": "Trang tính1"
+        },
+        {
+          "TypeOf": "folder",
+          "Label": "Folder_Image_Import",
+          "Value": "SL_IMAGE"
+        }
+      ],
+      "statusImport": "Đã xong"
+    }
+  ],
+  "test_ImportFaceInvalidFile": [
+    {
+      "Data": [
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachthuvienmat_AT.pdf",
+          "Value": "pdf"
+        }
+      ]
+    }
+  ],
+  "test_DownloadSampleFile": [
+    {
+      "fileName": "Mau_Danhsachthuvienmat.xlsx",
+      "fileURL": "https://c4i2-staging.vbd.vn/c4i2/Mau_Danhsachthuvienmat.xlsx"
+    }
+  ],
+  "test_ImportFaceSuccessUpdateData": [
+    {
+      "Data": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Danh sách theo dõi",
+          "Value": "Theo dõi FS 01"
+        },
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachthuvienmat_UpdateDtata_AT.xlsx",
+          "Value": "Trang tính1"
+        }
+      ],
+      "fileUpdateDataImport": "Mau_Danhsachthuvienmat_UpdateData_AT.xlsx",
+      "statusImport": "Cập nhật"
+    }
+  ]
+}

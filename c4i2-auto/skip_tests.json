@@ -1,0 +1,20 @@
+{
+    "skip_tests": {
+        "Test_LPRCauHinh::test_creation_of_new_tracking_type": {
+            "reason": "Không xóa được loại theo dõi trong tab Cấu hình",
+            "issue": "GISX-2003"
+        },
+        "Test_LPRCauHinh::test_delete_tracking_type": {
+            "reason": "Không xóa được loại theo dõi trong tab Cấu hình",
+            "issue": "GISX-2003"
+        },
+        "Test_FSCauHinh::test_creation_of_new_tracking_type": {
+            "reason": "Không xóa được loại theo dõi trong tab Cấu hình",
+            "issue": "GISX-2003"
+        },
+        "Test_FSCauHinh::test_delete_tracking_type": {
+            "reason": "Không xóa được loại theo dõi trong tab Cấu hình",
+            "issue": "GISX-2003"
+        }
+    }
+}

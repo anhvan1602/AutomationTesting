@@ -1,0 +1,100 @@
+{
+    "test_successful_login_and_display_full_features_EX": [
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Trung tâm điều hành",
+            "icon_url": "/station/map",
+            "icon_label_feature": "© Vietbando v20240708"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Tổng quan hệ thống",
+            "icon_url": "/station/dashboard?Province=79",
+            "icon_label_feature": "Số lượng vụ việc theo khu vực"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Quản lý vụ việc",
+            "icon_url": "/station/case/manager",
+            "icon_label_feature": "Thông tin vụ việc"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Sự kiện",
+            "icon_url": "/station/event",
+            "icon_label_feature": "Thông tin sự kiện"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Nhận dạng biển số xe",
+            "icon_url": "/station/lpr/detect",
+            "icon_label_feature": "Tìm thông tin"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Nhận dạng gương mặt",
+            "icon_url": "/station/face-alert/detect",
+            "icon_label_feature": "Thông tin chi tiết"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Nhận dạng tổng hợp",
+            "icon_url": "/station/general-detection/detect",
+            "icon_label_feature": "Tìm thông tin"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Khai thác bản đồ",
+            "icon_url": "/station/map",
+            "icon_label_feature": "© Vietbando v20240708"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Giám sát hành trình",
+            "icon_url": "/station/tracking",
+            "icon_label_feature": "© Vietbando v20240708"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Giám sát hoạt động của camera",
+            "icon_url": "/station/camera-monitoring",
+            "icon_label_feature": "© Vietbando v20240708"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Dữ liệu chuyên đề",
+            "icon_url": "/station/map",
+            "icon_label_feature": "© Vietbando v20240708"
+        },
+        {
+            "label_feature": "Trung tâm chỉ huy",
+            "icon_name": "Kênh liên lạc",
+            "icon_url": "/station/chat",
+            "icon_label_feature": "Kênh Chat"
+        },
+        {
+            "label_feature": "Quản lý dữ liệu bản đồ",
+            "icon_name": "Quản lý Dữ liệu",
+            "icon_url": "/data/manager",
+            "icon_label_feature": "Quản lý"
+        },
+        {
+            "label_feature": "Quản lý dữ liệu bản đồ",
+            "icon_name": "Trực quan hóa dữ liệu",
+            "icon_url": "/viz",
+            "icon_label_feature": "© Vietbando v20240708"
+        },
+        {
+            "label_feature": "Quản lý dữ liệu bản đồ",
+            "icon_name": "Bản đồ khai thác",
+            "icon_url": "/map",
+            "icon_label_feature": "© Vietbando v20240708"
+        },
+        {
+            "label_feature": "Quản lý dữ liệu bản đồ",
+            "icon_name": "Thiết lập chung",
+            "icon_url": "/settings/config",
+            "icon_label_feature": "Thiết lập"
+        }
+    ]
+}

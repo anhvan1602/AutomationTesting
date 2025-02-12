@@ -1,0 +1,1656 @@
+{
+  "test_permission_assignment": [
+    {
+      "id_tsc": "c4i2-790",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-790",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1724",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem danh sách miễn trừ",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1724",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem danh sách miễn trừ",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1725",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1725",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-706",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-706",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-704",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Chế độ xem trực tiếp",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "live-update-toggle"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-704",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG TỔNG HỢP/PHÁT HIỆN/Chế độ xem trực tiếp",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/general-detection/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "live-update-toggle"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1729",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/accomplice",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Đồng phạm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1729",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/accomplice",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Đồng phạm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1730",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/accomplice",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1730",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/accomplice",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1731",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/accomplice",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1731",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/ĐỒNG PHẠM/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/accomplice",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1737",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Cập nhật",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1737",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Cập nhật",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1738",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1738",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1739",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1739",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1740",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Thêm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        },
+        {
+          "type": "button_icon",
+          "value": "fal fa-angle-double-right"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1740",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/CẤU HÌNH/DANH SÁCH THEO DÕI/Thêm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        },
+        {
+          "type": "button_icon",
+          "value": "fal fa-angle-double-right"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-640",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-640",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-646",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem danh sách miễn trừ",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-646",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem danh sách miễn trừ",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-644",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem lịch sử",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Lịch sử"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-644",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem lịch sử",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Lịch sử"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-642",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-642",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-636",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem lịch sử",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xuất báo cáo lịch sử",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        },
+        {
+          "type": "button_text",
+          "value": "Lịch sử"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_text",
+          "value": "Xuất báo cáo"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-636",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem lịch sử",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xuất báo cáo lịch sử",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        },
+        {
+          "type": "button_text",
+          "value": "Lịch sử"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_text",
+          "value": "Xuất báo cáo"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-634",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Thêm theo dõi",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm theo dõi"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-634",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Thêm theo dõi",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm theo dõi"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-638",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-638",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/PHÁT HIỆN/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-658",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-658",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-662",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem danh sách miễn trừ",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-662",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem danh sách miễn trừ",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-656",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Cập nhật",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem danh sách miễn trừ",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Cập nhật danh sách miễn trừ",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Cập nhật danh sách miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-656",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Cập nhật",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem danh sách miễn trừ",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Cập nhật danh sách miễn trừ",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Cập nhật danh sách miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-654",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-654",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-652",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-652",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-650",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-650",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-648",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Thêm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-648",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THƯ VIỆN/Thêm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/gallery",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Thu gọn"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1733",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1733",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1734",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Không tìm thấy dữ liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1734",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Không tìm thấy dữ liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1735",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Nhập file",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn tập tin"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1735",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Nhập file",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn tập tin"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1732",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1732",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/NHẬP LIỆU/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-664",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THỐNG KÊ/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/dashboard",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Tổng số phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-664",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG BIỂN SỐ XE/THỐNG KÊ/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/lpr/dashboard",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Tổng số phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-668",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/THỐNG KÊ/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/dashboard?Province=79",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Thống kê tổng quát"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-668",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/THỐNG KÊ/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/dashboard?Province=79",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Thống kê tổng quát"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-588",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/GIÁM SÁT HÀNH TRÌNH/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/tracking",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Giám sát hành trình"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-588",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/GIÁM SÁT HÀNH TRÌNH/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/tracking",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Giám sát hành trình"
+        }
+      ]
+    }
+  ]
+}

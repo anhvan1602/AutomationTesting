@@ -1,0 +1,23 @@
+{
+  "test_filter_by_timestamp_success": [
+    {
+      "ToTime":  "6 giờ"
+    }
+  ],
+  "test_verify_search_by_camera": [
+    {
+      "Camera":  "HBT_HANWA_PTZ"
+    }
+  ],
+  "test_filter_by_time_range_success": [
+    {
+      "startTime": "10/04/2024 00:00",
+      "endTime": "10/04/2024 05:00"
+    }
+  ],
+  "test_verify_search_by_license_plate": [
+    {
+      "licensePlates":  "51B32280"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "test_search_location_success": [
+      {
+      "location": "VietBanDo"
+      }
+    ],
+  "test_verify_display_location_image_in_info_popup": [
+      {
+      "location": "Công an thành phố Hồ Chí Minh"
+      }
+    ],
+  "test_find_route_between_points": [
+      {
+           "start_point": "VietBanDo",
+           "destination": "Công viên Gia Định"
+       }
+    ],
+  "test_create_and_delete_label_successfully": [
+      {
+      "title_label": "Tạo Nhãn"
+      }
+    ],
+  "test_create_and_delete_point_successfully": [
+      {
+      "title_point": "Tạo Điểm"
+      }
+    ],
+  "test_create_and_delete_line_successfully": [
+      {
+      "title_line": "Tạo Đường"
+      }
+    ],
+  "test_create_and_delete_area_successfully": [
+      {
+      "title_area": "Tạo Vùng"
+      }
+    ],
+  "test_toggle_advanced_search_with_point": [
+      {
+      "title_point": "Điểm TKNC",
+      "radius": "20000",
+      "data_layer": "Trụ cứu hỏa"
+      }
+    ],
+  "test_toggle_advanced_search_with_line": [
+      {
+      "title_line": "Đường TKNC",
+      "radius": "20000",
+      "data_layer": "Trụ cứu hỏa"
+      }
+    ],
+  "test_toggle_advanced_search_with_area": [
+      {
+      "title_area": "Vùng TKNC",
+      "data_layer": "Trụ cứu hỏa"
+      }
+    ],
+  "test_verify_toggle_electronic_map_layer": [
+      {
+      "layer_name": "TRƯỜNG SƠN",
+      "location": "32, Đường Trường Sơn, Phường 2, Quận Tân Bình, Thành Phố Hồ Chí Minh"
+      },
+      {
+      "layer_name": "YÊN THẾ",
+      "location": "vietbando"
+      }
+    ],
+  "test_verify_base_map_can_be_changed": [
+      {
+      "overlay_name": "Màu Tối",
+      "location": "vietbando",
+      "image_name": "Map_MauToi.png"
+      },
+      {
+      "overlay_name": "Màu Sáng",
+      "location": "vietbando",
+      "image_name": "Map_MauSang.png"
+      },
+      {
+      "overlay_name": "Cổ điển",
+      "location": "vietbando",
+      "image_name": "Map_CoDien.png"
+      },
+      {
+      "overlay_name": "Vệ Tinh",
+      "location": "vietbando",
+      "image_name": "Map_VeTinh.png"
+      },
+      {
+      "overlay_name": "Tòa nhà 3D",
+      "location": "Dinh Thống Nhất - Dinh Độc Lập",
+      "image_name": "Map_ToaNha3D.png"
+      },
+      {
+      "overlay_name": "Ranh giới",
+      "location": "vietbando",
+      "image_name": "Map_RanhGioi.png"
+      },
+      {
+      "overlay_name": "Tòa vuông",
+      "location": "Dinh Thống Nhất - Dinh Độc Lập",
+      "image_name": "Map_ToaVuong.png"
+      }
+    ],
+  "test_verify_toggle_data_layer": [
+      {
+      "layer_name": "Trụ cứu hỏa",
+      "location": "vietbando",
+      "image_name": "Map_Iconcuuhoa.png"
+      },
+      {
+      "layer_name": "Camera FS",
+      "location": "vietbando",
+      "image_name": "Map_CameraFS.png"
+      },
+      {
+      "layer_name": "Panorama",
+      "location": "vietbando",
+      "image_name": "Map_Panorama.png"
+      }
+    ],
+  "test_verify_details_displayed_on_marker_click": [
+      {
+      "layer_name": "Trụ cứu hỏa",
+      "location": "vietbando",
+      "image_name": "Map_Iconcuuhoa.png"
+      },
+      {
+      "layer_name": "Camera FS",
+      "location": "vietbando",
+      "image_name": "Map_CameraFS.png"
+      },
+      {
+      "layer_name": "Panorama",
+      "location": "vietbando",
+      "image_name": "Map_Panorama.png"
+      }
+  ]
+}

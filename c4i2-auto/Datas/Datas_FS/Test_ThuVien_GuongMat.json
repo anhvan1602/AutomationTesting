@@ -1,0 +1,674 @@
+{
+  "test_AddFaceSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Thiên Thanh"
+        },
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202401"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tuổi",
+          "Value": "20-24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Dân tộc",
+          "Value": "Kinh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tôn giáo",
+          "Value": "Không"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nguyên quán",
+          "Value": "Thành Phố Đà Nẵng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quốc tịch",
+          "Value": "Ai Cập"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số điện thoại",
+          "Value": "0983094767"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nghề nghiệp",
+          "Value": "Công nhân"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trình độ học vấn",
+          "Value": "Trung học cơ sở"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Bí danh",
+          "Value": "Bí"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Công ty",
+          "Value": "BiDo"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Email",
+          "Value": "bi@gmail.com"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu da",
+          "Value": "Da trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Nơi làm việc",
+          "Value": "Công ty may Bi"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Biệt danh",
+          "Value": "Bi"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Vết sẹo/Hình xăm",
+          "Value": "Không có"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu tóc",
+          "Value": "Tóc đen"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu mắt",
+          "Value": "Mắt nâu"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chiều cao",
+          "Value": "170cm"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Cân nặng",
+          "Value": "50kg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Trạng thái",
+          "Value": "Khỏe mạnh"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Ghi chú",
+          "Value": "Ghi chú gương mặt Nguyễn Thiên Thanh"
+        },
+        {
+          "TypeOf": "date-list",
+          "Label": "Ngày sinh",
+          "Value": "'1', 'Tháng 1', '2000'"
+        },
+        {
+          "TypeOf": "filladdress",
+          "Label": "Nơi ĐK HKTT",
+          "Value": [
+            {
+              "TypeOf": "dropdown-btn-text",
+              "Label": "Tìm kiếm",
+              "Value": "Công Viên Gia Định"
+            }
+          ]
+        },
+        {
+          "TypeOf": "filladdress",
+          "Label": "Nơi ở hiện nay",
+          "Value": [
+            {
+              "TypeOf": "not-fill",
+              "Label": "Check",
+              "Value": "Giống nơi ĐK HKTT"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "test_AddFaceNotFillRequired": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202402"
+        }
+      ],
+      "desc": "không upload hình ảnh công dân"
+    },
+    {
+      "Data": [
+        {
+        }
+      ],
+      "desc": "không điền thông tin"
+    }
+  ],
+  "test_AddFaceCMNDExist": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1236987"
+        }
+      ],
+      "desc": "điền CMND/CCCD/Hộ chiếu đã tồn tại trong hệ thống"
+    }
+  ],
+  "test_AddFaceImageInValid": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "ImageBeach.jpg"
+        }
+      ],
+      "text_notify": "Không thể nhận dạng gương mặt",
+      "desc": "hình ảnh không có gương mặt"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_HuynhNhu1.jpg"
+        }
+      ],
+      "text_notify": "Ảnh đã tồn tại",
+      "desc": "hình ảnh đã tồn tại trong hệ thống"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "TapThe_Thangmay_3Nguoi.jpg"
+        }
+      ],
+      "text_notify": "Nhiều hơn 1 mặt trong ảnh",
+      "desc": "hình ảnh có nhiều hơn 1 gương mặt"
+    }
+  ],
+  "test_EditFaceSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Thiên Thanh"
+        },
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202404"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tuổi",
+          "Value": "20-24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Dân tộc",
+          "Value": "Kinh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tôn giáo",
+          "Value": "Không"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nguyên quán",
+          "Value": "Thành Phố Đà Nẵng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quốc tịch",
+          "Value": "Ai Cập"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số điện thoại",
+          "Value": "0983094767"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nghề nghiệp",
+          "Value": "Công nhân"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trình độ học vấn",
+          "Value": "Trung học cơ sở"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Bí danh",
+          "Value": "Bí"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Công ty",
+          "Value": "BiDo"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Email",
+          "Value": "bi@gmail.com"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu da",
+          "Value": "Da trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Nơi làm việc",
+          "Value": "Công ty may Bi"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Biệt danh",
+          "Value": "Bi"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Vết sẹo/Hình xăm",
+          "Value": "Không có"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu tóc",
+          "Value": "Tóc đen"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu mắt",
+          "Value": "Mắt nâu"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chiều cao",
+          "Value": "170cm"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Cân nặng",
+          "Value": "50kg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Trạng thái",
+          "Value": "Khỏe mạnh"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Ghi chú",
+          "Value": "Ghi chú gương mặt Nguyễn Thiên Thanh"
+        },
+        {
+          "TypeOf": "date-list",
+          "Label": "Ngày sinh",
+          "Value": "'1', 'Tháng 1', '2000'"
+        },
+        {
+          "TypeOf": "filladdress",
+          "Label": "Nơi ĐK HKTT",
+          "Value": [
+            {
+              "TypeOf": "dropdown-btn-text",
+              "Label": "Tìm kiếm",
+              "Value": "Công Viên Gia Định"
+            }
+          ]
+        },
+        {
+          "TypeOf": "filladdress",
+          "Label": "Nơi ở hiện nay",
+          "Value": [
+            {
+              "TypeOf": "not-fill",
+              "Label": "Check",
+              "Value": "Giống nơi ĐK HKTT"
+            }
+          ]
+        }
+      ],
+      "Data_Update": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Thiên Thanh Update"
+        },
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202404"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tuổi",
+          "Value": "20-24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Dân tộc",
+          "Value": "Kinh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tôn giáo",
+          "Value": "Không"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nguyên quán",
+          "Value": "Thành Phố Đà Nẵng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quốc tịch",
+          "Value": "Ai Cập"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số điện thoại",
+          "Value": "0983094767"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nghề nghiệp",
+          "Value": "Công nhân"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trình độ học vấn",
+          "Value": "Trung học cơ sở"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Bí danh",
+          "Value": "Bí Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Công ty",
+          "Value": "BiDo Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Email",
+          "Value": "biupdate@gmail.com"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu da",
+          "Value": "Da trắng Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Nơi làm việc",
+          "Value": "Công ty may Bi Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Biệt danh",
+          "Value": "Bi Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Vết sẹo/Hình xăm",
+          "Value": "Không có Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu tóc",
+          "Value": "Tóc đen Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu mắt",
+          "Value": "Mắt nâu Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chiều cao",
+          "Value": "170cm Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Cân nặng",
+          "Value": "50kg Update"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Trạng thái",
+          "Value": "Khỏe mạnh Update"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Ghi chú",
+          "Value": "Ghi chú gương mặt Nguyễn Thiên Thanh Update"
+        },
+        {
+          "TypeOf": "date-list",
+          "Label": "Ngày sinh",
+          "Value": "'1', 'Tháng 1', '2000'"
+        },
+        {
+          "TypeOf": "filladdress",
+          "Label": "Nơi ĐK HKTT",
+          "Value": [
+            {
+              "TypeOf": "dropdown-btn-text",
+              "Label": "Tìm kiếm",
+              "Value": "22/5 Đường Yên Thế"
+            }
+          ]
+        },
+        {
+          "TypeOf": "filladdress",
+          "Label": "Nơi ở hiện nay",
+          "Value": [
+            {
+              "TypeOf": "not-fill",
+              "Label": "Check",
+              "Value": "Giống nơi ĐK HKTT"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "test_EditFaceImageInValid": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202405"
+        }
+      ],
+      "Data_Edit": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "ImageBeach.jpg"
+        }
+      ],
+      "text_notify": "Không thể nhận dạng gương mặt",
+      "desc": "hình ảnh không có gương mặt"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202406"
+        }
+      ],
+      "Data_Edit": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_HuynhNhu1.jpg"
+        }
+      ],
+      "text_notify": "Ảnh đã tồn tại",
+      "desc": "hình ảnh đã tồn tại trong hệ thống"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202407"
+        }
+      ],
+      "Data_Edit": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "TapThe_Thangmay_3Nguoi.jpg"
+        }
+      ],
+      "text_notify": "Nhiều hơn 1 mặt trong ảnh",
+      "desc": "hình ảnh có nhiều hơn 1 gương mặt"
+    }
+  ],
+  "test_EditFaceCMNDExist": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202408"
+        }
+      ],
+      "Data_Edit": [
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1236987"
+        }
+      ],
+      "desc": "chỉnh sửa CMND/CCCD/Hộ chiếu đã tồn tại trong hệ thống"
+    }
+  ],
+  "test_DeleteFaceSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Thiên Thanh"
+        },
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "leminho.jpg"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "1405202409"
+        }
+      ]
+    }
+  ]
+}

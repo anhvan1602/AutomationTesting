@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Add/Edit/Delete BSX & FACE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<!--    Set action kiá»ƒu dÃ¡ng cho button View Image-->
+    <script>
+        function openImage(path) {
+            var img = new Image();
+            img.src = path;
+            var width = img.width;
+            var height = img.height;
+            var left = (screen.width/2)-(width/2);
+            var top = (screen.height/2)-(height/2);
+            window.open(path, 'Image', `width=${width},height=${height},left=${left},top=${top}`);
+        }
+    </script>
+    <style>
+        .view-image-btn {
+            background-color: #30b8b3;
+            border: 4px double #E0FFFF;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .view-image-btn:hover {
+            background-color: #40E0D0;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Report Add/Edit/Delete BSX & FACE</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-06-02 09:41:39</p>
+                <p class='attribute'><strong>Duration: </strong>331.08 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 6, Pass: 3, Error: 3</p>
+            </div>
+            <div class="col-xs-4">
+                <p class='attribute'><strong>Chart:</strong></p>
+                <canvas id="myChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                  var ctx = document.getElementById('myChart').getContext('2d');
+                  var myChart = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                        labels: ['Pass', 'Fail', 'Error', 'Skip'],
+                        datasets: [{
+                          label: 'Test Results',
+                           data: [
+                           3,
+                           0,
+                           3,
+                           0,
+                           ],
+                          backgroundColor: [
+                            'rgba(46, 204, 113, 1)',
+                            'rgba(231, 76, 60, 1)',
+                            'rgba(243, 156, 18, 1)',
+                            'rgba(149, 165, 166, 1)'
+
+                          ],
+                          borderWidth: 1,
+                          borderColor: [
+                            'green',
+                            'red',
+                            'orange',
+                            'gray'
+                          ]
+                        }]
+                      },
+                      options: {
+                         plugins: {
+                            tooltip: {
+                              callbacks: {
+                                label: function(context){
+                                  var data = context.dataset.data,
+                                      label = context.label,
+                                      currentValue = context.raw,
+                                      total = 0;
+
+                                  for( var i = 0; i < data.length; i++ ){
+                                    total += data[i];
+                                  }
+                                  var percentage = parseFloat((currentValue/total*100).toFixed(1));
+
+                                  return label + ": " +currentValue + ' (' + percentage + '%)';
+                                }
+                              }
+                            }
+                          },
+                        offset: 40,
+                        responsive: true,
+                        legend: {
+                          position: 'bottom',
+                          labels: {
+                            boxWidth: 1
+                          }
+                        }
+                      }
+                    });
+                </script>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.NhanDangBienSo.ThuVien_ThemBSX.AddBSX</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_AddNewFace</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_CaptureImageThemBSX_2023-06-02_09-42-18.png')">View Image</button>
+            </div>
+            <br>
+        
+Tìm thấy 'Biển số xe' là '54N323512' <br>
+Tìm thấy 'Loại xe' là 'Honda' <br>
+Tìm thấy 'Màu xe' là 'Trắng' <br>
+Tìm thấy 'Chủ sở hữu' là 'Nguyễn Văn B' <br>
+Tìm thấy 'Số khung' là '5682L45' <br>
+Tìm thấy 'Số máy' là '320T23' <br>
+Tìm thấy 'Hãng sản xuất' là 'Honda' <br>
+Tìm thấy 'Chủng loại' là 'Loại1' <br>
+Tìm thấy 'Năm sản xuất' là '2016' <br>
+Tìm thấy 'Đã kích hoạt' là 'True' <br>
+Case pass
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 42.60 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.NhanDangBienSo.ThuVien_ChinhSuaBSX.EditBSX</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_AddNewFace</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_CaptureImageEditBSX_2023-06-02_09-43-09.png')">View Image</button>
+            </div>
+            <br>
+        
+Tìm thấy 'Loại xe' là 'Honda' <br>
+Tìm thấy 'Màu xe' là 'Trắng' <br>
+Tìm thấy 'Chủ sở hữu' là 'Nguyễn Văn A' <br>
+Tìm thấy 'Số khung' là '5682L45' <br>
+Tìm thấy 'Số máy' là '320T23' <br>
+Tìm thấy 'Hãng sản xuất' là 'Honda' <br>
+Tìm thấy 'Chủng loại' là 'Loại1' <br>
+Tìm thấy 'Năm sản xuất' là '2016' <br>
+Tìm thấy 'Đã kích hoạt' là 'False' <br>
+Case pass
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 47.16 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.NhanDangBienSo.ThuVien_XoaBSX.DeleteBSX</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_AddNewFace</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_CaptureImageDeleteBSX_2023-06-02_09-43-38.png')">View Image</button>
+            </div>
+            <br>
+        
+Chỉnh sửa biển số xe thành công
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 24.46 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.NhanDangGuongMat.GuongMat_ThemCongDan.AddFace</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td></td>
+                            <td class="col-xs-10">test_AddNewFace</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_CaptureImageThemFace_2023-06-02_09-45-08.png')">View Image</button>
+            </div>
+            <br>
+        
+</p><p style="color:maroon;">TypeError: argument of type 'NoneType' is not iterable</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\TestCases\Web\NhanDangGuongMat\GuongMat_ThemCongDan.py", line 65, in test_AddNewFace
+    checkPopup = pageCommon.verifyNotifyPopup('Thêm thành công')
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\WebApplications\PageCommon.py", line 160, in verifyNotifyPopup
+    if txtMessageCheckExit in getTextPopup:
+TypeError: argument of type 'NoneType' is not iterable
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 117.40 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.NhanDangGuongMat.GuongMat_ChinhSuaCongDan.EditFace</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td></td>
+                            <td class="col-xs-10">test_AddNewFace</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>Khong tim thay phan tu xpath sau: (//i[contains(@class,"fal fa-edit")])[1]
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_clickObj_2023-06-02_09-46-30.png')">View Image</button>
+            </div>
+            <br>
+        
+</p><p style="color:maroon;">Exception: failed</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\Libraries\Framework\Utils.py", line 126, in clickObj
+    WebDriverWait(self.driver, self.delay).until(EC.element_to_be_clickable((By.XPATH, txtXpath))).click()
+  File "C:\Users\vannta\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00808893+48451]
+	(No symbol) [0x0079B8A1]
+	(No symbol) [0x006A5058]
+	(No symbol) [0x006D0467]
+	(No symbol) [0x006D069B]
+	(No symbol) [0x006FDD92]
+	(No symbol) [0x006EA304]
+	(No symbol) [0x006FC482]
+	(No symbol) [0x006EA0B6]
+	(No symbol) [0x006C7E08]
+	(No symbol) [0x006C8F2D]
+	GetHandleVerifier [0x00A68E3A+2540266]
+	GetHandleVerifier [0x00AA8959+2801161]
+	GetHandleVerifier [0x00AA295C+2776588]
+	GetHandleVerifier [0x00892280+612144]
+	(No symbol) [0x007A4F6C]
+	(No symbol) [0x007A11D8]
+	(No symbol) [0x007A12BB]
+	(No symbol) [0x00794857]
+	BaseThreadInitThunk [0x76437D59+25]
+	RtlInitializeExceptionChain [0x7732B74B+107]
+	RtlClearBits [0x7732B6CF+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\TestCases\Web\NhanDangGuongMat\GuongMat_ChinhSuaCongDan.py", line 61, in test_AddNewFace
+    pageBase.clickObj(Obj_GuongMat.iconEdit)
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\Libraries\Framework\Utils.py", line 130, in clickObj
+    raise Exception("failed")
+Exception: failed
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 49.91 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.NhanDangGuongMat.GuongMat_XoaCongDan.DeleteFace</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td></td>
+                            <td class="col-xs-10">test_AddNewFace</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: <br>
+                                
+                                    Step 1: <br>
+                                
+                                    Step 2: <br>
+                                
+                                    Step 3: <br>
+                                
+                                    Step 4: <br>
+                                
+                                    Step 5: <br>
+                                
+                                    Expected Results: <br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>Khong tim thay phan tu xpath sau: (//label[@class = "checkbox-item"])[2]
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_clickObj_2023-06-02_09-47-20.png')">View Image</button>
+            </div>
+            <br>
+        
+</p><p style="color:maroon;">Exception: failed</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\Libraries\Framework\Utils.py", line 126, in clickObj
+    WebDriverWait(self.driver, self.delay).until(EC.element_to_be_clickable((By.XPATH, txtXpath))).click()
+  File "C:\Users\vannta\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\wait.py", line 95, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00808893+48451]
+	(No symbol) [0x0079B8A1]
+	(No symbol) [0x006A5058]
+	(No symbol) [0x006D0467]
+	(No symbol) [0x006D069B]
+	(No symbol) [0x006FDD92]
+	(No symbol) [0x006EA304]
+	(No symbol) [0x006FC482]
+	(No symbol) [0x006EA0B6]
+	(No symbol) [0x006C7E08]
+	(No symbol) [0x006C8F2D]
+	GetHandleVerifier [0x00A68E3A+2540266]
+	GetHandleVerifier [0x00AA8959+2801161]
+	GetHandleVerifier [0x00AA295C+2776588]
+	GetHandleVerifier [0x00892280+612144]
+	(No symbol) [0x007A4F6C]
+	(No symbol) [0x007A11D8]
+	(No symbol) [0x007A12BB]
+	(No symbol) [0x00794857]
+	BaseThreadInitThunk [0x76437D59+25]
+	RtlInitializeExceptionChain [0x7732B74B+107]
+	RtlClearBits [0x7732B6CF+191]
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\TestCases\Web\NhanDangGuongMat\GuongMat_XoaCongDan.py", line 59, in test_AddNewFace
+    pageBase.clickObj(Obj_GuongMat.checkboxFace)
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\Libraries\Framework\Utils.py", line 130, in clickObj
+    raise Exception("failed")
+Exception: failed
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 49.55 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>

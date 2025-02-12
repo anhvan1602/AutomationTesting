@@ -1,0 +1,337 @@
+{
+  "test_AddBSXSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040401"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu xe",
+          "Value": "Trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số khung",
+          "Value": "5682T23"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số máy",
+          "Value": "320T23"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Hãng sản xuất",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủng loại",
+          "Value": "Loại 1"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Năm sản xuất",
+          "Value": "2016"
+        }
+      ]
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040402"
+        }
+      ]
+    }
+  ],
+  "test_AddBSXUnSuccess_AddExitData": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040403"
+        }
+      ],
+      "desc": "Chữ in hoa"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55n040403"
+        }
+      ],
+      "desc": "Chữ in thường"
+    }
+  ],
+  "test_AddBSXUnSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn A"
+        }
+      ],
+      "desc": "Bỏ trống trường bắt buộc"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": " "
+        }
+      ],
+      "desc": "Nhập dấu cách vào trường bắt buộc"
+    }
+  ],
+  "test_EditBSXSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040404"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn A"
+        }
+      ],
+      "Data_Edit": [
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        }
+      ],
+      "desc": "Chỉnh sửa thông tin Chủ sở hữu"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040405"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Yamaha"
+        }
+      ],
+      "Data_Edit": [
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        }
+      ],
+      "desc": "Chỉnh sửa thông tin Loại xe"
+    }
+  ],
+  "test_AddTrackingIntoBSX": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040406"
+        }
+      ],
+      "data_watchlist": "Theo dõi LPR 01"
+    }
+  ],
+  "test_DeleteBSX": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040408"
+        }
+      ]
+    }
+  ],
+  "test_SearchSingleBSX": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040410"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu xe",
+          "Value": "Trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        }
+      ],
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số",
+          "Value": "55N040410"
+        }
+      ],
+      "desc": "Tìm kiếm theo Biển số xe"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040411"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu xe",
+          "Value": "Trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        }
+      ],
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        }
+      ],
+      "desc": "Tìm kiếm theo Loại xe"
+    }
+  ],
+  "test_SearchCombinedBSX": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040412"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu xe",
+          "Value": "Trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        }
+      ],
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số",
+          "Value": "55N040412"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu xe",
+          "Value": "Trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        }
+      ],
+      "desc": "Tìm kiếm kết hợp"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số xe",
+          "Value": "55N040413"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu xe",
+          "Value": "Trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        }
+      ],
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Biển số",
+          "Value": "55N040413"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Loại xe",
+          "Value": "Honda"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Màu xe",
+          "Value": "Trắng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Chủ sở hữu",
+          "Value": "Nguyễn Văn B"
+        }
+      ],
+      "desc": "Tìm kiếm kết hợp"
+    }
+  ]
+}

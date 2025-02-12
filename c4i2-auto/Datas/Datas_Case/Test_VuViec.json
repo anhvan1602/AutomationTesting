@@ -1,0 +1,499 @@
+{
+    "test_CreateVuViec": [
+        {
+            "Data": [
+                {
+                    "TypeOf": "input",
+                    "Label": "Tên vụ việc",
+                    "Value": "VV_2910_1120_ys"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Lĩnh vực",
+                    "Value": "Hình sự"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Loại vụ việc",
+                    "Value": "Giết người"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tính chất vụ việc",
+                    "Value": "Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quy trình xử lý",
+                    "Value": "HS-Giết người-Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Trạng thái vụ việc",
+                    "Value": "Đang xử lý"
+                },
+                {
+                    "TypeOf": "textarea",
+                    "Label": "Nội dung vụ việc",
+                    "Value": "Vào đêm 06/03, vào lúc 1 giờ sáng, đã xảy ra một vụ việc nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị xử lý",
+                    "Value": "Công an quận 8 (G01.899.829.000)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị trực thuộc",
+                    "Value": "Công an phường 13 (G01.899.829.017)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tỉnh/ thành",
+                    "Value": "Thành Phố Hồ Chí Minh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quận/ huyện",
+                    "Value": "Huyện Bình Chánh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Xã/ phường",
+                    "Value": "Xã An Phú Tây"
+                }
+            ]
+        }
+    ],
+    "test_DeleteVuViec": [
+        {
+            "Data": [
+                {
+                    "TypeOf": "input",
+                    "Label": "Tên vụ việc",
+                    "Value": "VV_2910_1120_Hx"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Lĩnh vực",
+                    "Value": "Hình sự"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Loại vụ việc",
+                    "Value": "Giết người"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tính chất vụ việc",
+                    "Value": "Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quy trình xử lý",
+                    "Value": "HS-Giết người-Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Trạng thái vụ việc",
+                    "Value": "Đang xử lý"
+                },
+                {
+                    "TypeOf": "textarea",
+                    "Label": "Nội dung vụ việc",
+                    "Value": "Vào đêm 06/03, vào lúc 1 giờ sáng, đã xảy ra một vụ việc nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị xử lý",
+                    "Value": "Công an quận 8 (G01.899.829.000)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị trực thuộc",
+                    "Value": "Công an phường 13 (G01.899.829.017)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tỉnh/ thành",
+                    "Value": "Thành Phố Hồ Chí Minh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quận/ huyện",
+                    "Value": "Huyện Bình Chánh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Xã/ phường",
+                    "Value": "Xã An Phú Tây"
+                }
+            ]
+        }
+    ],
+    "test_UpdateDoiTuongVuViec": [
+        {
+            "Data": [
+                {
+                    "TypeOf": "input",
+                    "Label": "Tên vụ việc",
+                    "Value": "VV_2910_1120_OC"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Lĩnh vực",
+                    "Value": "Hình sự"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Loại vụ việc",
+                    "Value": "Giết người"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tính chất vụ việc",
+                    "Value": "Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quy trình xử lý",
+                    "Value": "HS-Giết người-Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Trạng thái vụ việc",
+                    "Value": "Đang xử lý"
+                },
+                {
+                    "TypeOf": "textarea",
+                    "Label": "Nội dung vụ việc",
+                    "Value": "Vào đêm 06/03, vào lúc 1 giờ sáng, đã xảy ra một vụ việc nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị xử lý",
+                    "Value": "Công an quận 8 (G01.899.829.000)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị trực thuộc",
+                    "Value": "Công an phường 13 (G01.899.829.017)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tỉnh/ thành",
+                    "Value": "Thành Phố Hồ Chí Minh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quận/ huyện",
+                    "Value": "Huyện Bình Chánh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Xã/ phường",
+                    "Value": "Xã An Phú Tây"
+                }
+            ],
+            "Data_UpdateObj": [
+                {
+                    "TypeOf": "Image",
+                    "Label": "Đối tượng 1",
+                    "Value": "GuongMat_AnhVan_KT.jpeg"
+                }
+            ]
+        }
+    ],
+    "test_UpdateNanNhanVuViec": [
+        {
+            "Data": [
+                {
+                    "TypeOf": "input",
+                    "Label": "Tên vụ việc",
+                    "Value": "VV_2910_1120_yL"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Lĩnh vực",
+                    "Value": "Hình sự"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Loại vụ việc",
+                    "Value": "Giết người"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tính chất vụ việc",
+                    "Value": "Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quy trình xử lý",
+                    "Value": "HS-Giết người-Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Trạng thái vụ việc",
+                    "Value": "Đang xử lý"
+                },
+                {
+                    "TypeOf": "textarea",
+                    "Label": "Nội dung vụ việc",
+                    "Value": "Vào đêm 06/03, vào lúc 1 giờ sáng, đã xảy ra một vụ việc nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị xử lý",
+                    "Value": "Công an quận 8 (G01.899.829.000)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị trực thuộc",
+                    "Value": "Công an phường 13 (G01.899.829.017)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tỉnh/ thành",
+                    "Value": "Thành Phố Hồ Chí Minh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quận/ huyện",
+                    "Value": "Huyện Bình Chánh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Xã/ phường",
+                    "Value": "Xã An Phú Tây"
+                }
+            ],
+            "Data_UpdateVictim": [
+                {
+                    "TypeOf": "input-popup",
+                    "Label": "Họ và tên",
+                    "Value": "Nạn nhân số 1"
+                },
+                {
+                    "TypeOf": "input-popup",
+                    "Label": "CMND/ CCCD/ Hộ chiếu",
+                    "Value": "123123123"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Giới tính",
+                    "Value": "Nam"
+                },
+                {
+                    "TypeOf": "input-popup",
+                    "Label": "Nơi thường trú",
+                    "Value": "22 Yên Thế, Tân Bình, TPHCM"
+                },
+                {
+                    "TypeOf": "input-popup",
+                    "Label": "Nơi ở hiện tại",
+                    "Value": "329 Lý Thường Kiệt"
+                },
+                {
+                    "TypeOf": "input-popup",
+                    "Label": "Số điện thoại",
+                    "Value": "090990909"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tình trạng",
+                    "Value": "Bị thương"
+                }
+            ]
+        }
+    ],
+    "test_UpdatePhuongTienVuViec": [
+        {
+            "Data": [
+                {
+                    "TypeOf": "input",
+                    "Label": "Tên vụ việc",
+                    "Value": "VV_2910_1120_ZT"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Lĩnh vực",
+                    "Value": "Hình sự"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Loại vụ việc",
+                    "Value": "Giết người"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tính chất vụ việc",
+                    "Value": "Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quy trình xử lý",
+                    "Value": "HS-Giết người-Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Trạng thái vụ việc",
+                    "Value": "Đang xử lý"
+                },
+                {
+                    "TypeOf": "textarea",
+                    "Label": "Nội dung vụ việc",
+                    "Value": "Vào đêm 06/03, vào lúc 1 giờ sáng, đã xảy ra một vụ việc nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị xử lý",
+                    "Value": "Công an quận 8 (G01.899.829.000)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị trực thuộc",
+                    "Value": "Công an phường 13 (G01.899.829.017)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tỉnh/ thành",
+                    "Value": "Thành Phố Hồ Chí Minh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quận/ huyện",
+                    "Value": "Huyện Bình Chánh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Xã/ phường",
+                    "Value": "Xã An Phú Tây"
+                }
+            ],
+            "Data_UpdateVehicle": [
+                {
+                    "TypeOf": "input-popup",
+                    "Label": "Biển số xe",
+                    "Value": "92N174065"
+                }
+            ]
+        }
+    ],
+    "test_UpdateFileDinhKem": [
+        {
+            "Data": [
+                {
+                    "TypeOf": "input",
+                    "Label": "Tên vụ việc",
+                    "Value": "VV_2910_1120_wh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Lĩnh vực",
+                    "Value": "Hình sự"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Loại vụ việc",
+                    "Value": "Giết người"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tính chất vụ việc",
+                    "Value": "Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quy trình xử lý",
+                    "Value": "HS-Giết người-Nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Trạng thái vụ việc",
+                    "Value": "Đang xử lý"
+                },
+                {
+                    "TypeOf": "textarea",
+                    "Label": "Nội dung vụ việc",
+                    "Value": "Vào đêm 06/03, vào lúc 1 giờ sáng, đã xảy ra một vụ việc nghiêm trọng"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị xử lý",
+                    "Value": "Công an quận 8 (G01.899.829.000)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Đơn vị trực thuộc",
+                    "Value": "Công an phường 13 (G01.899.829.017)"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Tỉnh/ thành",
+                    "Value": "Thành Phố Hồ Chí Minh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Quận/ huyện",
+                    "Value": "Huyện Bình Chánh"
+                },
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Xã/ phường",
+                    "Value": "Xã An Phú Tây"
+                }
+            ],
+            "Data_UpdateAttachFile": [
+                {
+                    "TypeOf": "Media",
+                    "Label": "Video",
+                    "Value": [
+                        "Video01.mp4"
+                    ]
+                },
+                {
+                    "TypeOf": "Media",
+                    "Label": "Hình ảnh",
+                    "Value": [
+                        "GuongMat_AnhLong1.jpg",
+                        "GuongMat_AnhLong3.jpeg"
+                    ]
+                }
+            ]
+        }
+    ],
+    "test_CreateCaseUnSuccessfulNotFillRequiredField": [
+        {
+            "Data": [],
+            "Field_RequiredMissing": [
+                "Lĩnh vực",
+                "Tên vụ việc"
+            ]
+        },
+        {
+            "Data": [
+                {
+                    "TypeOf": "input",
+                    "Label": "Tên vụ việc",
+                    "Value": "VuViecTest030607"
+                }
+            ],
+            "Field_RequiredMissing": [
+                "Lĩnh vực"
+            ]
+        },
+        {
+            "Data": [
+                {
+                    "TypeOf": "dropdown-btn-text",
+                    "Label": "Lĩnh vực",
+                    "Value": "Hình sự"
+                }
+            ],
+            "Field_RequiredMissing": [
+                "Tên vụ việc"
+            ]
+        }
+    ]
+}

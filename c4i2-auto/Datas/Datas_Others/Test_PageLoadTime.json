@@ -1,0 +1,508 @@
+{
+  "test_page_load_time": [
+    {
+      "feature": "Quản lý vụ việc/Vụ việc",
+      "path_feature": "/c4i2/station/case/manager",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Vụ việc"
+        }
+      ]
+    },
+    {
+      "feature": "Quản lý vụ việc/Vụ việc/Tìm kiếm",
+      "path_feature": "/c4i2/station/case/manager",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập từ khóa",
+          "value": "ATGT"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Vụ việc"
+        }
+      ]
+    },
+    {
+      "feature": "Quản lý vụ việc/Vụ việc/Tạo vụ việc",
+      "path_feature": "/c4i2/station/case/manager",
+      "steps": [
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tạo vụ việc",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Vụ việc"
+        }
+      ]
+    },
+    {
+      "feature": "Quản lý vụ việc/Đối tượng",
+      "path_feature": "/c4i2/station/case/suspects",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Đối tượng"
+        }
+      ]
+    },
+    {
+      "feature": "Quản lý vụ việc/Đối tượng/Tìm kiếm",
+      "path_feature": "/c4i2/station/case/suspects",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập họ và tên",
+          "value": "Nguyễn Thị Ánh Vân"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Đối tượng"
+        }
+      ]
+    },
+    {
+      "feature": "Quản lý vụ việc/Đối tượng/Tạo đối tượng",
+      "path_feature": "/c4i2/station/case/suspects",
+      "steps": [
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tạo đối tượng",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Đối tượng"
+        }
+      ]
+    },
+    {
+      "feature": "Quản lý vụ việc/Nhập liệu",
+      "path_feature": "/c4i2/station/case/import",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "feature": "Quản lý vụ việc/Thống kê báo cáo",
+      "path_feature": "/c4i2/station/case/report",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thống kê báo cáo"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Tình nghi",
+      "path_feature": "/c4i2/station/lpr/detect-suspect",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Tình nghi"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Tình nghi/Tìm kiếm",
+      "path_feature": "/c4i2/station/lpr/detect-suspect",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập biển số xe",
+          "value": "50*"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Tình nghi"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Phát hiện",
+      "path_feature": "/c4i2/station/lpr/detect",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Phát hiện/Tìm kiếm",
+      "path_feature": "/c4i2/station/lpr/detect",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập biển số xe",
+          "value": "92*"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Thư viện",
+      "path_feature": "/c4i2/station/lpr/gallery",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Thư viện/Tìm kiếm",
+      "path_feature": "/c4i2/station/lpr/gallery",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập biển số xe",
+          "value": "92*"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Thư viện/Thêm biển số xe",
+      "path_feature": "/c4i2/station/lpr/gallery",
+      "steps": [
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Thêm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Nhập liệu",
+      "path_feature": "/c4i2/station/lpr/import",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng biển số xe/Thống kê",
+      "path_feature": "/c4i2/station/lpr/dashboard",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thống kê"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Tình nghi",
+      "path_feature": "/c4i2/station/face-alert/detect-suspect",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Tình nghi"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Tình nghi/Tìm kiếm",
+      "path_feature": "/c4i2/station/face-alert/detect-suspect",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập họ và tên",
+          "value": "Nguyễn"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Tình nghi"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Phát hiện",
+      "path_feature": "/c4i2/station/face-alert/detect",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Phát hiện/Tìm kiếm",
+      "path_feature": "/c4i2/station/face-alert/detect",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập họ và tên",
+          "value": "Nguyễn"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Thư viện",
+      "path_feature": "/c4i2/station/face-alert/gallery",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Thư viện/Tìm kiếm",
+      "path_feature": "/c4i2/station/face-alert/gallery",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập họ và tên",
+          "value": "Nguyễn"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Thư viện/Thêm gương măt",
+      "path_feature": "/c4i2/station/face-alert/gallery",
+      "steps": [
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Thêm mới",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Nhập liệu",
+      "path_feature": "/c4i2/station/face-alert/import",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "feature": "Nhận dạng gương mặt/Thống kê",
+      "path_feature": "/c4i2/station/face-alert/dashboard",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Thống kê"
+        }
+      ]
+    },
+    {
+      "feature": "Sự kiện",
+      "path_feature": "/c4i2/station/event",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Sự kiện"
+        }
+      ]
+    },
+    {
+      "feature": "Sự kiện/Tìm kiếm",
+      "path_feature": "/c4i2/station/event",
+      "steps": [
+        {
+          "action": "select",
+          "type": "dropdown_list",
+          "label": "Loại sự kiện",
+          "value": "Gương mặt"
+        },
+        {
+          "action": "click",
+          "type": "button_text",
+          "label": "Tìm kiếm",
+          "value": ""
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Sự kiện"
+        }
+      ]
+    },
+    {
+      "feature": "Trang chủ",
+      "path_feature": "/portal/c4i2",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Vụ việc"
+        }
+      ]
+    },
+    {
+      "feature": "Giám sát hành trình",
+      "path_feature": "/c4i2/station/tracking",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Giám sát hành trình"
+        }
+      ]
+    },
+    {
+      "feature": "Giám sát hành trình/Tìm kiếm",
+      "path_feature": "/c4i2/station/tracking",
+      "steps": [
+        {
+          "action": "send_key",
+          "type": "text_box",
+          "label": "Nhập từ khóa để tìm kiếm",
+          "value": "Nguyễn"
+        }
+      ],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Giám sát hành trình"
+        }
+      ]
+    },
+    {
+      "feature": "Bản đồ",
+      "path_feature": "/c4i2/station/map",
+      "steps": [],
+      "expected_signals":[
+        {
+          "type": "text",
+          "value": "Bản đồ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "test_send_file_attachment_in_chat": [
+    {
+      "channel_name": "Kênh công khai 2910",
+      "path_prepare": "/c4i2/station/event",
+      "path_chat": "/c4i2/station/chat"
+    }
+  ]
+}

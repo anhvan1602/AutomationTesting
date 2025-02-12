@@ -1,0 +1,222 @@
+{
+  "create_data_search": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_DoiTuong.png"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "ĐỐI TƯỢNG 210503"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "2105202403"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        },
+        {
+          "TypeOf": "date-list",
+          "Label": "Ngày sinh",
+          "Value": "'1', 'Tháng 1', '2000'"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Dân tộc",
+          "Value": "Kinh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tôn giáo",
+          "Value": "Không"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nguyên quán",
+          "Value": "Thành Phố Đà Nẵng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quốc tịch",
+          "Value": "Việt Nam"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Thuộc nhóm đối tượng",
+          "Value": "Cướp giật nghiêm trọng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số điện thoại",
+          "Value": "03512345678"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nghề nghiệp",
+          "Value": "Công nhân"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trình độ học vấn",
+          "Value": "Trung cấp"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Ghi chú",
+          "Value": "Đây là ghi chú cho đối tượng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tội danh",
+          "Value": "Xâm phạm trật tự quản lý hành chính"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tội danh",
+          "Value": "Tội trốn tránh nghĩa vụ quân sự"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tiền án, tiền sự",
+          "Value": "Tiền án"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Diện đối tượng quản lý",
+          "Value": "Theo dõi"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tình trạng sử dụng chất ma tuý",
+          "Value": "Nghiện"
+        }
+      ]
+    }
+  ],
+  "test_search_single_face_in_image_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_DoiTuong.png"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "ĐỐI TƯỢNG 210503"
+        }
+      ]
+    }
+  ],
+  "test_search_unclear_image_failure": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "FaceNotClean.jpg"
+        }
+      ]
+    }
+  ],
+  "test_filter_by_offense_group_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tội danh",
+          "Value": "Xâm phạm trật tự quản lý hành chính"
+        }
+      ]
+    }
+  ],
+  "test_filter_by_offense_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tội danh",
+          "Value": "Xâm phạm trật tự quản lý hành chính"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tội danh",
+          "Value": "Tội trốn tránh nghĩa vụ quân sự"
+        }
+      ]
+    }
+  ],
+  "test_search_with_full_name": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "ĐỐI TƯỢNG 210503"
+        }
+      ]
+    }
+  ],
+  "test_search_with_identity_card": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "2105202403"
+        }
+      ]
+    }
+  ],
+  "test_filter_by_gender": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        }
+      ]
+    }
+  ],
+  "test_filter_by_district": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quận/ huyện",
+          "Value": "Huyện Bình Chánh"
+        }
+      ]
+    }
+  ],
+  "test_filter_by_wards": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quận/ huyện",
+          "Value": "Quận 10"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Xã/ phường",
+          "Value": "Phường 10"
+        }
+      ]
+    }
+  ]
+}

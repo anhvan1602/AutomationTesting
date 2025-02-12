@@ -1,0 +1,39 @@
+{
+  "test_creation_of_new_tracking_type": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Tên",
+          "Value": "TestTheoDoiBSX01"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Mô tả",
+          "Value": "Automation Testing UI"
+        }
+        ],
+      "expected": {
+          "value": "Thêm thành công",
+          "status": true
+        }
+    },
+    {"Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Tên",
+          "Value": " "
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Mô tả",
+          "Value": "Automation Testing UI"
+        }
+        ],
+      "expected": {
+          "value": "Tên theo dõi không được để trông hoặc chỉ chứa khoảng trắng",
+          "status": false
+        }
+    }
+  ]
+}

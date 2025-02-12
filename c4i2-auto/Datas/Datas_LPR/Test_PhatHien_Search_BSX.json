@@ -1,0 +1,88 @@
+{
+  "test_verify_system_operation_and_continuous_update": [
+      {
+        "value": 5,
+        "unit": "minutes"
+      }
+    ],
+  "test_search_single_license_plate_success": [
+      {
+        "licensePlates": "59C163311",
+        "expected": {
+          "value": "59C163311",
+          "status": true
+        }
+      },
+      {
+        "licensePlates": "59C 163311",
+        "expected": {
+          "value": "Không tìm thấy dữ liệu",
+          "status": false
+        }
+      }
+    ],
+  "test_search_single_license_plate_image_success": [
+    {
+      "imageLicensePlates": "51A1188.png",
+      "expected": {
+        "value": "51A1188",
+        "status": true
+      }
+    },
+    {
+      "imageLicensePlates": "BSXNotClean02.png",
+      "expected": {
+        "value": "Không phát hiện biển số",
+        "status": false
+      }
+    }
+  ],
+  "test_filter_by_accuracy_success": [
+    {
+      "From": 70,
+      "To": 100
+    }
+  ],
+  "test_filter_by_time_range_success": [
+    {
+      "startTime": "28/09/2023 07:00",
+      "endTime": "28/09/2024 10:00"
+    }
+  ],
+  "test_reset_button_behavior": [
+    {
+      "licensePlates": "59C163311"
+    }
+  ],
+  "test_search_single_image_with_two_license_plates_success": [
+    {
+      "imageLicensePlates": "2BSX04.png",
+      "expected": {
+        "value": ["50H38386", "50E05620"],
+        "status": true
+      }
+    }
+  ],
+  "test_filter_by_timestamp_success": [
+    {
+      "ToTime":  "6 giờ"
+    }
+  ],
+  "test_filter_by_camera_success": [
+    {
+      "Camera":  "NKKN_HANWA_FIX"
+      }
+  ],
+  "test_filter_combined_license_plate_and_camera_success": [
+    {
+      "licensePlates": "59C163311",
+      "Camera": "NKKN_HANWA_FIX"
+    }
+  ],
+  "test_add_tracking_to_detected_license_plates": [
+    {
+      "data_bsx": "51G63536",
+      "data_watchlist": "Theo dõi LPR 01"
+    }
+  ]
+}

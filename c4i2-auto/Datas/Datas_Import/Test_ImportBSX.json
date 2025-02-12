@@ -1,0 +1,71 @@
+{
+  "test_ImportBSXSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Theo dõi",
+          "Value": "Theo dõi LPR AT"
+        },
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachbiensoxe_AT.csv",
+          "Value": "Trang tính1"
+        }
+      ],
+      "statusImport": "Đã xong"
+    }
+  ],
+  "test_ImportBSXSuccessUpdateData": [
+    {
+      "Data": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Danh sách theo dõi",
+          "Value": "Theo dõi LPR 01"
+        },
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachbiensoxe_UpdataData.xlsx",
+          "Value": "Trang tính1"
+        }
+      ],
+      "fileUpdateDataImport": "Mau_Danhsachbiensoxe_UpdataData.xlsx",
+      "statusImport": "Cập nhật"
+    }
+  ],
+  "test_ImportBSXUnXSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Danh sách theo dõi",
+          "Value": "Theo dõi LPR 02"
+        },
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachbiensoxe_NotFillRequired.xlsx",
+          "Value": "Trang tính1"
+        }
+      ],
+      "statusImport": "Thất bại"
+    }
+  ],
+  "test_ImportBSXInvalidFile": [
+    {
+      "Data": [
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachbiensoxe_AT.pdf",
+          "Value": "pdf"
+        }
+      ]
+    }
+  ],
+  "test_DownloadSampleFile": [
+    {
+      "fileName": "Mau_Danhsachbiensoxe.xlsx",
+      "fileURL": "https://c4i2-staging.vbd.vn/c4i2/Mau_Danhsachbiensoxe.xlsx"
+    }
+  ]
+}

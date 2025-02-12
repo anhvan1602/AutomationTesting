@@ -1,0 +1,41 @@
+{
+  "test_ImportDoiTuongSuccess": [
+    {
+      "Data": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm đối tượng",
+          "Value": "Theo dõi Obj AT"
+        },
+        {
+          "TypeOf": "file",
+          "Label": "MAU_DANHSACHDOITUONG_v2.1_AT.xlsx",
+          "Value": "Danh sách đối tượng"
+        },
+        {
+          "TypeOf": "folder",
+          "Label": "Folder_Image_Import",
+          "Value": "SL_IMAGE"
+        }
+      ],
+      "statusImport": "Đã xong"
+    }
+  ],
+  "test_ImportFaceInvalidFile": [
+    {
+      "Data": [
+        {
+          "TypeOf": "file",
+          "Label": "Mau_Danhsachbiensoxe_AT.pdf",
+          "Value": "pdf"
+        }
+      ]
+    }
+  ],
+  "test_DownloadSampleFile": [
+    {
+      "fileName": "MAU_DANHSACHDOITUONG.xlsx",
+      "fileURL": "https://c4i2-staging.vbd.vn/c4i2/suspects/MAU_DANHSACHDOITUONG.xlsx"
+    }
+  ]
+}

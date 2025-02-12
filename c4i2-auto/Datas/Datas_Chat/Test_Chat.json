@@ -1,0 +1,25 @@
+{
+    "test_publish_channel": [
+        {
+            "SourceUser": "qc_van_1",
+            "DestinationUser": "qc_van_2",
+            "channel_name": "KCK_2910_1120_bb",
+            "random_text": "kmt1X9seNh"
+        }
+    ],
+    "test_private_channel": [
+        {
+            "SourceUser": "qc_van_1",
+            "DestinationUser": "qc_van_2",
+            "channel_name": "KRT_2910_1120_xN",
+            "random_text": "p2B5tmGIBM"
+        }
+    ],
+    "test_direct_message": [
+        {
+            "SourceUser": "qc_van_1",
+            "DestinationUser": "qc_van_2",
+            "random_text": "hdfcAXPjfc"
+        }
+    ]
+}

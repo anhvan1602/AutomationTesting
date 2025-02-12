@@ -1,0 +1,88 @@
+{
+  "test_verify_system_operation_and_continuous_update": [
+    {
+      "value": 30,
+      "unit": "minutes"
+    }
+  ],
+  "test_search_name_success": [
+    {
+      "Label": "Nhập họ và tên",
+      "Value": "Nguyễn Ngọc Vinh"
+    }
+  ],
+  "test_search_id_card_success": [
+    {
+      "Label": "Nhập CCCD/CMND/Hộ chiếu",
+      "Value": "1236987"
+    }
+  ],
+  "test_search_single_face_image_success": [
+    {
+      "Label": "Trần Vũ Quý",
+      "Value": "GuongMat_VuQuy1.png"
+    }
+  ],
+  "test_search_multi_face_image_success": [
+    {
+      "TypeOf": ["Gương mặt 1", "Gương mặt 2"],
+      "Label": ["Trần Tuấn", "Phạm Trọng Tính"],
+      "Value": "TapThe_ThangMay_2nguoi.png"
+    }
+  ],
+  "test_search_unclear_image_failure": [
+    {
+      "Value": "faceNotCLean1.png",
+      "expected": "Không thể nhận dạng gương mặt"
+    }
+  ],
+  "test_filter_by_accuracy_success": [
+    {
+      "From": 50,
+      "To": 85
+    }
+  ],
+  "test_filter_by_time_range_success": [
+    {
+      "startTime": "10/04/2024 00:00",
+      "endTime": "10/04/2024 05:00"
+    }
+  ],
+  "test_filter_by_timestamp_success": [
+    {
+      "ToTime":  "6 giờ"
+    }
+  ],
+  "test_filter_by_camera_success": [
+    {
+      "Camera":  "THam.HuongThangMay"
+    }
+  ],
+  "test_filter_combined_name_and_id_card_success": [
+    {
+      "LabelID": "Nhập CCCD/CMND/Hộ chiếu",
+      "ValueID": "1236987",
+      "LabelName": "Nhập họ và tên",
+      "ValueName": "Nguyễn Thị Ánh Vân"
+    }
+  ],
+  "test_reset_button_behavior": [
+    {
+      "Label": "Nhập họ và tên",
+      "Value": "Nguyễn Thị Ánh Vân"
+    }
+  ],
+  "test_face_detection_history_verification": [
+    {
+      "Label": "Nhập họ và tên",
+      "Value": "Nguyễn Thị Phi"
+    }
+  ],
+  "test_add_tracking_to_detected_face": [
+    {
+      "Label": "Nhập họ và tên",
+      "Value": "Nguyễn Thị Ánh Vân",
+      "data_watchlist": "Theo dõi FS 01"
+    }
+  ]
+}

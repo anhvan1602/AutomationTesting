@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Chức năng Import Face</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<!--    Set action kiá»ƒu dÃ¡ng cho button View Image-->
+    <script>
+        function openImage(path) {
+            var img = new Image();
+            img.src = path;
+            var width = img.width;
+            var height = img.height;
+            var left = (screen.width/2)-(width/2);
+            var top = (screen.height/2)-(height/2);
+            window.open(path, 'Image', `width=${width},height=${height},left=${left},top=${top}`);
+        }
+    </script>
+    <style>
+        .view-image-btn {
+            background-color: #30b8b3;
+            border: 4px double #E0FFFF;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .view-image-btn:hover {
+            background-color: #40E0D0;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Report Chức năng Import Face</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-07-01 11:23:16</p>
+                <p class='attribute'><strong>Duration: </strong>55.44 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 1</p>
+            </div>
+            <div class="col-xs-4">
+                <p class='attribute'><strong>Chart:</strong></p>
+                <canvas id="myChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                  var ctx = document.getElementById('myChart').getContext('2d');
+                  var myChart = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                        labels: ['Pass', 'Fail', 'Error', 'Skip'],
+                        datasets: [{
+                          label: 'Test Results',
+                           data: [
+                           1,
+                           0,
+                           0,
+                           0,
+                           ],
+                          backgroundColor: [
+                            'rgba(46, 204, 113, 1)',
+                            'rgba(231, 76, 60, 1)',
+                            'rgba(243, 156, 18, 1)',
+                            'rgba(149, 165, 166, 1)'
+
+                          ],
+                          borderWidth: 1,
+                          borderColor: [
+                            'green',
+                            'red',
+                            'orange',
+                            'gray'
+                          ]
+                        }]
+                      },
+                      options: {
+                         plugins: {
+                            tooltip: {
+                              callbacks: {
+                                label: function(context){
+                                  var data = context.dataset.data,
+                                      label = context.label,
+                                      currentValue = context.raw,
+                                      total = 0;
+
+                                  for( var i = 0; i < data.length; i++ ){
+                                    total += data[i];
+                                  }
+                                  var percentage = parseFloat((currentValue/total*100).toFixed(1));
+
+                                  return label + ": " +currentValue + ' (' + percentage + '%)';
+                                }
+                              }
+                            }
+                          },
+                        offset: 40,
+                        responsive: true,
+                        legend: {
+                          position: 'bottom',
+                          labels: {
+                            boxWidth: 1
+                          }
+                        }
+                      }
+                    });
+                </script>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.ChucNangImport.ImportFace.ImportFace</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_ImportFaceSuccess</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: User đăng nhập thành công vào hệ thống<br>
+                                
+                                    Step 1: Điều hướng đến trang Nhập liệu (tính năng Nhận dạng gương mặt)<br>
+                                
+                                    Step 2: Chọn Loại theo dõi và tải folder ảnh lên hệ thống<br>
+                                
+                                    Step 3: Bắt đầu Import<br>
+                                
+                                    Step 4: Chọn Loại theo dõi và tải file import lên hệ thống<br>
+                                
+                                    Step 5: Bắt đầu Import<br>
+                                
+                                    Step 6: Chuyển đến Thư viện<br>
+                                
+                                    Step 7: Verify data trên GRID (Search -> Xem chi tiếc -> So Sánh)<br>
+                                
+                                    Step 8: Xóa dữ liệu đã import<br>
+                                
+                                    Expected Results: Verify data import trùng khớp<br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p><br>Bắt đầu kiểm tra dữ liệu import dòng thứ 1
+<br>- Dữ liệu đã được Import [('Họ và tên', 'Nguyen A'), ('Nơi ở hiện nay', 'Hồ Chí Minh'), ('Bí danh', 'AA'), ('Nơi làm việc', 'VBD'), ('Màu da', 'Đen'), ('Màu mắt', 'Đỏ'), ('Màu tóc', 'Vàng'), ('Chiều cao', '180cm'), ('Cân nặng', '54kg'), ('Vết sẹo/Hình xăm', 'Không có'), ('File ảnh khuôn mặt', 'anh1.jpg')]
+<br>- Dữ liệu chưa được Import [('Id cá nhân', ''), ('CCCD/CMND/Hộ chiếu', '425'), ('Ngày sinh', '1'), ('Tháng sinh', '1'), ('Năm sinh', '1990'), ('Tuổi', '23'), ('Giới tính', 'Nam'), ('Dân tộc', 'Kinh'), ('Tôn giáo', 'Không'), ('Quốc tịch', 'Việt Nam'), ('Nguyên quán', 'Hồ Chí Minh'), ('Nơi ĐK HKTT', 'Hồ Chí Minh'), ('Tỉnh, Thành phố', 'Hồ Chí Minh'), ('Quận Huyện', 'Quận 1'), ('Phường xã', 'Phường 2'), ('Nghề nghiệp', 'Tự do'), ('Trình độ học vấn', 'Đại học')]
+<br>Bắt đầu kiểm tra dữ liệu import dòng thứ 2
+<br>- Dữ liệu đã được Import [('Họ và tên', 'Nguyen B'), ('Nơi ở hiện nay', 'Hồ Chí Minh'), ('Bí danh', 'AA'), ('Nơi làm việc', 'VBD'), ('Màu da', 'Đen'), ('Màu mắt', 'Đỏ'), ('Màu tóc', 'Vàng'), ('Chiều cao', '180cm'), ('Cân nặng', '54kg'), ('Vết sẹo/Hình xăm', 'Không có'), ('File ảnh khuôn mặt', 'anh2.jpg')]
+<br>- Dữ liệu chưa được Import [('Id cá nhân', ''), ('CCCD/CMND/Hộ chiếu', '426'), ('Ngày sinh', '2'), ('Tháng sinh', '2'), ('Năm sinh', '1990'), ('Tuổi', '23'), ('Giới tính', 'Nữ'), ('Dân tộc', 'Kinh'), ('Tôn giáo', 'Không'), ('Quốc tịch', 'Việt Nam'), ('Nguyên quán', 'Hồ Chí Minh'), ('Nơi ĐK HKTT', 'Hồ Chí Minh'), ('Tỉnh, Thành phố', 'Hồ Chí Minh'), ('Quận Huyện', 'Quận 2'), ('Phường xã', 'Phường 2'), ('Nghề nghiệp', 'Tự do'), ('Trình độ học vấn', 'Đại học')]
+<br>Bắt đầu kiểm tra dữ liệu import dòng thứ 3
+<br>- Dữ liệu đã được Import [('Họ và tên', 'Nguyen C'), ('Nơi ở hiện nay', 'Hồ Chí Minh'), ('Bí danh', 'AA'), ('Nơi làm việc', 'VBD'), ('Màu da', 'Đen'), ('Màu mắt', 'Đỏ'), ('Màu tóc', 'Vàng'), ('Chiều cao', '180cm'), ('Cân nặng', '54kg'), ('Vết sẹo/Hình xăm', 'Không có'), ('File ảnh khuôn mặt', '')]
+<br>- Dữ liệu chưa được Import [('Id cá nhân', ''), ('CCCD/CMND/Hộ chiếu', '427'), ('Ngày sinh', '3'), ('Tháng sinh', '3'), ('Năm sinh', '2001'), ('Tuổi', '23'), ('Giới tính', 'Nữ'), ('Dân tộc', 'Kinh'), ('Tôn giáo', 'Không'), ('Quốc tịch', 'Việt Nam'), ('Nguyên quán', 'Hồ Chí Minh'), ('Nơi ĐK HKTT', 'Hồ Chí Minh'), ('Tỉnh, Thành phố', 'Hồ Chí Minh'), ('Quận Huyện', 'Quận 3'), ('Phường xã', 'Phường 2'), ('Nghề nghiệp', 'Tự do'), ('Trình độ học vấn', 'Đại học')]
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 1 -- Duration: 55.44 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>

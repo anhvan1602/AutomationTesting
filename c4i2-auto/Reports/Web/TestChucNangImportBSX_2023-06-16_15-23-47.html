@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Chức năng Import BSX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<!--    Set action kiá»ƒu dÃ¡ng cho button View Image-->
+    <script>
+        function openImage(path) {
+            var img = new Image();
+            img.src = path;
+            var width = img.width;
+            var height = img.height;
+            var left = (screen.width/2)-(width/2);
+            var top = (screen.height/2)-(height/2);
+            window.open(path, 'Image', `width=${width},height=${height},left=${left},top=${top}`);
+        }
+    </script>
+    <style>
+        .view-image-btn {
+            background-color: #30b8b3;
+            border: 4px double #E0FFFF;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .view-image-btn:hover {
+            background-color: #40E0D0;
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Report Chức năng Import BSX</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-06-16 15:23:47</p>
+                <p class='attribute'><strong>Duration: </strong>205.85 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 1, Error: 1</p>
+            </div>
+            <div class="col-xs-4">
+                <p class='attribute'><strong>Chart:</strong></p>
+                <canvas id="myChart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                <script>
+                  var ctx = document.getElementById('myChart').getContext('2d');
+                  var myChart = new Chart(ctx, {
+                      type: 'doughnut',
+                      data: {
+                        labels: ['Pass', 'Fail', 'Error', 'Skip'],
+                        datasets: [{
+                          label: 'Test Results',
+                           data: [
+                           1,
+                           0,
+                           1,
+                           0,
+                           ],
+                          backgroundColor: [
+                            'rgba(46, 204, 113, 1)',
+                            'rgba(231, 76, 60, 1)',
+                            'rgba(243, 156, 18, 1)',
+                            'rgba(149, 165, 166, 1)'
+
+                          ],
+                          borderWidth: 1,
+                          borderColor: [
+                            'green',
+                            'red',
+                            'orange',
+                            'gray'
+                          ]
+                        }]
+                      },
+                      options: {
+                         plugins: {
+                            tooltip: {
+                              callbacks: {
+                                label: function(context){
+                                  var data = context.dataset.data,
+                                      label = context.label,
+                                      currentValue = context.raw,
+                                      total = 0;
+
+                                  for( var i = 0; i < data.length; i++ ){
+                                    total += data[i];
+                                  }
+                                  var percentage = parseFloat((currentValue/total*100).toFixed(1));
+
+                                  return label + ": " +currentValue + ' (' + percentage + '%)';
+                                }
+                              }
+                            }
+                          },
+                        offset: 40,
+                        responsive: true,
+                        legend: {
+                          position: 'bottom',
+                          labels: {
+                            boxWidth: 1
+                          }
+                        }
+                      }
+                    });
+                </script>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>Steps</th>
+                            <th>TestCases.Web.ChucNangImport.ImportBSX.ImportBSX</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td></td>
+                            <td class="col-xs-10">test_ImportBSXNotFillRequired</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: User đăng nhập thành công vào hệ thống<br>
+                                
+                                    Step 1: Điều hướng đến trang Nhập liệu (tính năng Nhận dạng biển số xe)<br>
+                                
+                                    Step 2: Chọn Loại theo dõi và tải file lên hệ thống<br>
+                                
+                                    Step 3: Bắt đầu Import verify Status<br>
+                                
+                                    Step 4: Chuyển đến tab Thư viện<br>
+                                
+                                    Step 5: Verify data trên GRID (Search -> So Sánh giá trị với file excel)<br>
+                                
+                                    Step 6: Xóa dữ liệu đã import<br>
+                                
+                                    Expected Results: Verify Status 'Thất bại'<br> Dữ liệu không hợp lệ không được import (--FAILED--)<br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>Khong tim thay phan tu xpath sau: //div[contains(@class, "list-item-container active")]//child::span[text()="Thất bại"]
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_sendKeyInput_2023-06-16_15-24-39.png')">View Image</button>
+            </div>
+            <br>
+        
+
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_CaptureImageImport_2023-06-16_15-24-40.png')">View Image</button>
+            </div>
+            <br>
+        
+Verify Status Import
+Khong tim thay phan tu xpath sau: (//i[contains(@class,"fal fa-edit")])[1]
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_sendKeyInput_2023-06-16_15-25-17.png')">View Image</button>
+            </div>
+            <br>
+        
+Dữ liệu dòng thứ 2 không được import
+Có dữ liệu không được import
+Khong tim thay phan tu xpath sau: (//label[@class = "checkbox-item"])[2]
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_sendKeyInput_2023-06-16_15-25-53.png')">View Image</button>
+            </div>
+            <br>
+        
+</p><p style="color:maroon;">Exception: Failed at step: Expected Results: Verify Status 'Thất bại', Dữ liệu không hợp lệ không được import (--FAILED--)
+Exception: </p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\TestCases\Web\ChucNangImport\ImportBSX.py", line 161, in test_ImportBSXNotFillRequired
+    assert False
+AssertionError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vannta\PycharmProjects\c4i2-auto\TestCases\Web\ChucNangImport\ImportBSX.py", line 165, in test_ImportBSXNotFillRequired
+    raise Exception(f"Failed at step: {self.step[current_step]}\nException: {str(e)}")
+Exception: Failed at step: Expected Results: Verify Status 'Thất bại', Dữ liệu không hợp lệ không được import (--FAILED--)
+Exception: 
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td></td>
+                            <td class="col-xs-10">test_ImportBSXSuccess</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-6" colspan="1">
+                                
+                                    Pre_Condition: User đăng nhập thành công vào hệ thống<br>
+                                
+                                    Step 1: Điều hướng đến trang Nhập liệu (tính năng Nhận dạng biển số xe)<br>
+                                
+                                    Step 2: Chọn Loại theo dõi và tải file lên hệ thống<br>
+                                
+                                    Step 3: Bắt đầu Import verify Status<br>
+                                
+                                    Step 4: Chuyển đến tab Thư viện<br>
+                                
+                                    Step 5: Verify data trên GRID (Search -> So Sánh giá trị với file excel)<br>
+                                
+                                    Step 6: Xóa dữ liệu đã import<br>
+                                
+                                    Expected Results: Verify Status 'Đã xong' verify data import trùng khớp<br>
+                                
+                            </td>
+                            <td class="col-xs-9" colspan="3"><p>
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_CaptureImageImport_2023-06-16_15-26-21.png')">View Image</button>
+            </div>
+            <br>
+        
+Verify Status Import
+
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_ImageImport_2023-06-16_15-26-34.png')">View Image</button>
+            </div>
+            <br>
+        
+
+
+            <div>
+                <button class="view-image-btn" onclick="openImage('./ImageError/error_ImageImport_2023-06-16_15-26-46.png')">View Image</button>
+            </div>
+            <br>
+        
+Dữ liệu đã được import thành công
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 1, Error: 1 -- Duration: 205.85 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>

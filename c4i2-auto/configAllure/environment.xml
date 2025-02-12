@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<environment>
+  <parameter>
+    <key>Tenant</key>
+    <value>https://c4i2-v6.vbd.vn</value>
+  </parameter>
+  <parameter>
+    <key>Tenant Version</key>
+    <value>Phiên bản: 1.27.3 - Ngày cập nhật: 15/10/2024 16:52</value>
+  </parameter>
+  <parameter>
+    <key>Source Code Version</key>
+    <value>5.1.2 merge-code 4.4.13.9 (update on dc) - 11/10/2024</value>
+  </parameter>
+</environment>

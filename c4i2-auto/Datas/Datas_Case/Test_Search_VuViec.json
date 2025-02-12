@@ -1,0 +1,249 @@
+{
+  "create_data_search": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Tên vụ việc",
+          "Value": "VVTestSearch1206"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Lĩnh vực",
+          "Value": "Hình sự"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Loại vụ việc",
+          "Value": "Giết người"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tính chất vụ việc",
+          "Value": "Nghiêm trọng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quy trình xử lý",
+          "Value": "HS-Giết người-Nghiêm trọng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trạng thái vụ việc",
+          "Value": "Đang xử lý"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Nội dung vụ việc",
+          "Value": "Vào đêm 06/03, vào lúc 1 giờ sáng, đã xảy ra một vụ việc nghiêm trọng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Đơn vị xử lý",
+          "Value": "Công an quận 8 (G01.899.829.000)"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Đơn vị trực thuộc",
+          "Value": "Công an phường 13 (G01.899.829.017)"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tỉnh/ thành",
+          "Value": "Thành Phố Hồ Chí Minh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quận/ huyện",
+          "Value": "Huyện Bình Chánh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Xã/ phường",
+          "Value": "Xã An Phú Tây"
+        }
+      ],
+      "Data_UpdateObj": [
+        {
+          "TypeOf": "Image",
+          "Label": "Đối tượng 1",
+          "Value": "GuongMat_AnhVan_KT.jpeg"
+        }
+      ]
+    }
+  ],
+  "test_search_by_agency_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Đơn vị tạo",
+          "Value": "qc_van_1"
+        }
+      ]
+    }
+  ],
+  "test_search_by_status_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trạng thái",
+          "Value": "Đang xử lý"
+        }
+      ]
+    }
+  ],
+  "test_search_by_district_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quận/ huyện",
+          "Value": "Huyện Bình Chánh"
+        }
+      ]
+    }
+  ],
+  "test_search_by_commune_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quận/ huyện",
+          "Value": "Huyện Bình Chánh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Xã/ phường",
+          "Value": "Xã An Phú Tây"
+        }
+      ]
+    }
+  ],
+  "test_search_by_subject_name_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Đối tượng",
+          "Value": "Nguyễn Thị Ánh Vân"
+        }
+      ]
+    }
+  ],
+  "test_search_by_subject_id_card_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Đối tượng",
+          "Value": "Nguyễn Thị Ánh Vân"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND / CCCD / Hộ chiếu đối tượng",
+          "Value": "1236987"
+        }
+      ]
+    }
+  ],
+  "test_reset_button_behavior": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Đối tượng",
+          "Value": "Nguyễn Thị Ánh Vân"
+        }
+      ]
+    }
+  ],
+  "test_search_by_case_name": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Tên vụ việc",
+          "Value": "VVTestSearch1206"
+        }
+      ]
+    }
+  ],
+  "test_search_by_object_id": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Đối tượng",
+          "Value": "Nguyễn Thị Ánh Vân"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Id đối tượng",
+          "Value": "DT_FHX88R"
+        }
+      ]
+    }
+  ],
+  "test_search_with_field": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Lĩnh vực",
+          "Value": "Hình sự"
+        }
+      ]
+    }
+  ],
+  "test_search_by_category": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Lĩnh vực",
+          "Value": "Hình sự"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Loại vụ việc",
+          "Value": "Giết người"
+        }
+      ]
+    }
+  ],
+  "test_search_with_case_behavior": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tính chất vụ việc",
+          "Value": "Đặc biệt nghiêm trọng"
+        }
+      ]
+    }
+  ],
+  "test_filter_by_time_range_success": [
+    {
+      "startTime": "06/05/2024 16:11",
+      "endTime": "09/05/2024 16:11"
+    }
+  ],
+  "test_search_combined": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Đối tượng",
+          "Value": "Nguyễn Thị Ánh Vân"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Id đối tượng",
+          "Value": "DT_FHX88R"
+        }
+      ]
+    }
+  ]
+}

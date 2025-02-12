@@ -1,0 +1,39 @@
+{
+  "test_filter_by_timestamp_success": [
+    {
+      "ToTime": "1 ngày"
+    }
+  ],
+  "test_search_fs_filter_by_timestamp_success": [
+    {
+      "NameObj": "Trần Vũ Quý",
+      "ToTime": "7 ngày"
+    }
+  ],
+  "test_search_lpr_filter_by_timestamp_success": [
+    {
+      "ValueBSX": "51B32280",
+      "ToTime": "7 ngày"
+    }
+  ],
+  "test_filter_by_monitoring_type": [
+    {
+      "LoaiTheoDoi": "Vietbando QC",
+      "ToTime": "7 ngày"
+    }
+  ],
+  "test_filter_by_time_range_success": [
+    {
+      "startTime": "03/09/2024 23:59",
+      "endTime": "04/09/2024 23:59"
+    }
+  ],
+  "test_search_by_event_type": [
+    {
+         "eventType": "Gương mặt"
+    },
+    {
+         "eventType": "Biển số"
+    }
+    ]
+}

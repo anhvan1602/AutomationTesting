@@ -1,0 +1,2886 @@
+{
+  "test_permission_assignment": [
+    {
+      "id_tsc": "c4i2-789",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-789",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1699",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Nhập",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn thư mục"
+        },
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn file"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1699",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Nhập",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn thư mục"
+        },
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn file"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1701",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1701",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1698",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Không tìm thấy dữ liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1698",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/NHẬP LIỆU/Xem chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Không tìm thấy dữ liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-516",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Tạo",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tạo vụ việc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-516",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Tạo",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tạo vụ việc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-518",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa vụ việc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-518",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa vụ việc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-524",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-524",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-522",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Nhắc nhở",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-alarm-clock"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-522",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Nhắc nhở",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-alarm-clock"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-530",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Vụ việc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-530",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Vụ việc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-526",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-526",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-538",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem quy trình xử lý",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-code-branch"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-538",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem quy trình xử lý",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-code-branch"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-536",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem lịch sử",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-history"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-536",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem lịch sử",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-history"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-534",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem báo cáo chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-cloud-download"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-534",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUẢN LÝ/Xem báo cáo chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-ellipsis"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_icon",
+          "value": "far fa-cloud-download"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-540",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Tạo",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tạo đối tượng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-540",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Tạo",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tạo đối tượng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-542",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa đối tượng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-542",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa đối tượng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-544",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xuất báo cáo",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xuất báo cáo"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-544",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xuất báo cáo",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xuất báo cáo"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-546",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-546",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-548",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-548",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/suspects",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-550",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Đối tượng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-550",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/ĐỐI TƯỢNG/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Đối tượng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-566",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Quy trình xử lý"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-566",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/manager",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Quy trình xử lý"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-556",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Thêm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tạo quy trình"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-556",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Thêm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tạo quy trình"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-558",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Nhân bản",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-copy"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-558",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Nhân bản",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-copy"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-560",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa quy trình"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-560",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa quy trình"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-562",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-562",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-564",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-564",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/VỤ VIỆC/QUY TRÌNH XỬ LÝ/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/case/workflow",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-572",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/chat",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Kênh liên lạc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-572",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/chat",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Kênh liên lạc"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-570",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Thêm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/chat",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-plus"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Tạo kênh"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-570",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Thêm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/chat",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-plus"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Tạo kênh"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-568",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Nhắn tin",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/chat",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Off-Topic"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "far fa-paperclip"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-568",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/KÊNH LIÊN LẠC/Nhắn tin",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/chat",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Off-Topic"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "far fa-paperclip"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-578",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-bell"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-578",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-bell"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-580",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-580",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-576",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-576",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-574",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa sự kiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-574",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/SỰ KIỆN/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/event",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa sự kiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1723",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Thêm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        },
+        {
+          "type": "button_icon",
+          "value": "fal fa-angle-double-right"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1723",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Thêm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        },
+        {
+          "type": "button_icon",
+          "value": "fal fa-angle-double-right"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1721",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1721",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1720",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1720",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1722",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1722",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/CẤU HÌNH/DANH SÁCH THEO DÕI/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/config",
+      "steps_to_permission_page": [
+        {
+          "type": "text",
+          "value": "Nhóm theo dõi"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-604",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-604",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-612",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm theo dõi"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-612",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm theo dõi"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-610",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem danh sách miễn trừ",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-610",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem danh sách miễn trừ",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-608",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem lịch sử",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_text",
+          "value": "Lịch sử nhận dạng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-608",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem lịch sử",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_text",
+          "value": "Lịch sử nhận dạng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-606",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-606",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fas fa-info"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-602",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-602",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-600",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem lịch sử",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xuất báo cáo",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        },
+        {
+          "type": "button_text",
+          "value": "Lịch sử nhận dạng"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_text",
+          "value": "Xuất báo cáo"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-600",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem chi tiết",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xem lịch sử",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/PHÁT HIỆN/Xuất báo cáo",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/detect",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fas fa-info"
+        },
+        {
+          "type": "button_text",
+          "value": "Lịch sử nhận dạng"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "disable",
+          "type": "button_text",
+          "value": "Xuất báo cáo"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-626",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-626",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Thư viện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-630",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem danh sách miễn trừ",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-630",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Tìm kiếm",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem danh sách miễn trừ",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Miễn trừ"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-628",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Cập nhật",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem lịch sử",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Lịch sử nhận dạng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-628",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Cập nhật",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem lịch sử",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+        {
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Lịch sử nhận dạng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-622",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Cập nhật",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-622",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Cập nhật",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-edit"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-620",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Tìm kiếm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-620",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Tìm kiếm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Tìm kiếm"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-618",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xuất báo cáo",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xuất báo cáo lịch sử nhận dạng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-618",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xuất báo cáo",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xuất báo cáo lịch sử nhận dạng"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-616",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-616",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa những mục đã chọn"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-614",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Thêm",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm mới"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-614",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THƯ VIỆN/Thêm",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/gallery",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Thêm mới"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1705",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1705",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Nhập liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1704",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem chi tiết",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Không tìm thấy dữ liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1704",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem chi tiết",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Không tìm thấy dữ liệu"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1706",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Nhập liệu",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn file"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1706",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Nhập liệu",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Chọn file"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1708",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1708",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem",
+          "status": true
+        },
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xem chi tiết",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/NHẬP LIỆU/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/import",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_icon",
+          "value": "fal fa-trash-alt"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1709",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/QUẢN LÝ CHỈ MỤC/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/QUẢN LÝ CHỈ MỤC/Xóa",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/index",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa toàn bộ index"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1709",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+        {
+          "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/QUẢN LÝ CHỈ MỤC/Xem",
+          "status": true
+        }
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/QUẢN LÝ CHỈ MỤC/Xóa",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/index",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "button_text",
+          "value": "Xóa toàn bộ index"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1710",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/QUẢN LÝ CHỈ MỤC/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/index",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Quản lý chỉ mục"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1710",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/QUẢN LÝ CHỈ MỤC/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/index",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Quản lý chỉ mục"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1726",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THỐNG KÊ/Xem",
+      "status": true,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/dashboard?Province=79",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Tổng số phát hiện"
+        }
+      ]
+    },
+    {
+      "id_tsc": "c4i2-1726",
+      "unit": "QC",
+      "role": "van_member",
+      "pre_condition": [
+      ],
+      "feature": "TRUNG TÂM THÔNG TIN CHỈ HUY/NHẬN DẠNG GƯƠNG MẶT/THỐNG KÊ/Xem",
+      "status": false,
+      "path_permission": "/account-management",
+      "path_check_permission": "/c4i2/station/face-alert/dashboard?Province=79",
+      "steps_to_permission_page": [
+      ],
+      "expected_signals":[
+        {
+          "action": "hide",
+          "type": "text",
+          "value": "Tổng số phát hiện"
+        }
+      ]
+    }
+  ]
+}

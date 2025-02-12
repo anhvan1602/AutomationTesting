@@ -1,0 +1,157 @@
+{
+  "create_data_search": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Tết"
+        },
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "jiso2.png"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "5242023"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "33"
+        }
+      ]
+    }
+  ],
+  "test_search_by_name_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Tết"
+        }
+      ]
+    }
+  ],
+  "test_search_id_card_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "5242023"
+        }
+      ]
+    }
+  ],
+  "test_search_filter_by_gender": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        }
+      ]
+    }
+  ],
+  "test_search_filter_by_age": [
+    {
+          "FromAge": 25,
+          "ToAge": 30
+    }
+  ],
+  "test_search_filter_by_date_of_birth": [
+    {
+          "FromDate": 29051980,
+          "ToDate": 10062000
+    }
+  ],
+  "test_search_single_face_in_image_success": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Tết"
+        },
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "jiso2.png"
+        }
+      ]
+    }
+  ],
+  "test_search_unclear_image_failure": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "Image",
+          "Label": "Gương mặt",
+          "Value": "FaceNotClean.jpg"
+        }
+      ]
+    }
+  ],
+  "test_reset_button_behavior": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Tết"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/CCCD/Hộ chiếu",
+          "Value": "5242023"
+        }
+      ]
+    }
+  ],
+  "test_search_in_tracking_list": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Tuấn Khanh"
+        }
+      ],
+      "data_watchlist": "Theo dõi FS 01"
+    }
+  ],
+  "test_search_search_in_exemption_list": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Tết"
+        }
+      ],
+      "data_listType": "Miễn trừ"
+    }
+  ],
+  "test_add_face_into_tracking_list": [
+    {
+      "Data_Search": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "Nguyễn Tết"
+        }
+      ],
+      "data_listTracking": "Theo dõi FS 02"
+    }
+  ]
+}

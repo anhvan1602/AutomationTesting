@@ -1,0 +1,397 @@
+{
+  "test_AddUndefinedObject": [
+    {
+      "Data": [
+      ]
+    }
+  ],
+  "test_CreateObjectWithAllAttributes": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_DoiTuong.png"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "ĐỐI TƯỢNG 210502"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "2105202402"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        },
+        {
+          "TypeOf": "date-list",
+          "Label": "Ngày sinh",
+          "Value": "'1', 'Tháng 1', '2000'"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Dân tộc",
+          "Value": "Kinh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tôn giáo",
+          "Value": "Không"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nguyên quán",
+          "Value": "Thành Phố Đà Nẵng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quốc tịch",
+          "Value": "Việt Nam"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Thuộc nhóm đối tượng",
+          "Value": "Cướp giật nghiêm trọng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số điện thoại",
+          "Value": "03512345678"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nghề nghiệp",
+          "Value": "Công nhân"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trình độ học vấn",
+          "Value": "Trung cấp"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Ghi chú",
+          "Value": "Đây là ghi chú cho đối tượng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tội danh",
+          "Value": "Xâm phạm trật tự quản lý hành chính"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tội danh",
+          "Value": "Tội trốn tránh nghĩa vụ quân sự"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tiền án, tiền sự",
+          "Value": "Tiền án"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Diện đối tượng quản lý",
+          "Value": "Theo dõi"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tình trạng sử dụng chất ma tuý",
+          "Value": "Nghiện"
+        }
+      ]
+    }
+  ],
+  "test_VerifyImageUploadCanBeSearched": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_AnhVan_KT.jpeg"
+        }
+      ],
+      "Name": "Nguyễn Thị Ánh Vân"
+    }
+  ],
+  "test_VerifyCanViewRecognitionHistory": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_AnhVan_KT.jpeg"
+        }
+      ],
+      "Name": "Nguyễn Thị Ánh Vân"
+    }
+  ],
+  "test_AddUndefinedObjectWithImageUnValid": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "ImageBeach.jpg"
+        }
+      ],
+      "text_notify": "Không thể nhận dạng gương mặt",
+      "desc": "hình ảnh không có gương mặt"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_HuynhNhu1.jpg"
+        }
+      ],
+      "text_notify": "Ảnh đã tồn tại",
+      "desc": "hình ảnh đã tồn tại trong hệ thống"
+    },
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "TapThe_Thangmay_3Nguoi.jpg"
+        }
+      ],
+      "text_notify": "Nhiều hơn 1 mặt trong ảnh",
+      "desc": "hình ảnh có nhiều hơn 1 gương mặt"
+    }
+  ],
+  "test_EditObjectWithAllAttributes": [
+    {
+      "Data": [
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_DoiTuong.png"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "ĐỐI TƯỢNG 210504"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "2105202402"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nam"
+        },
+        {
+          "TypeOf": "date-list",
+          "Label": "Ngày sinh",
+          "Value": "'1', 'Tháng 1', '2000'"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Dân tộc",
+          "Value": "Kinh"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tôn giáo",
+          "Value": "Không"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nguyên quán",
+          "Value": "Thành Phố Đà Nẵng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quốc tịch",
+          "Value": "Việt Nam"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Thuộc nhóm đối tượng",
+          "Value": "Cướp giật nghiêm trọng"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số điện thoại",
+          "Value": "03512345678"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nghề nghiệp",
+          "Value": "Công nhân"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trình độ học vấn",
+          "Value": "Trung cấp"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Ghi chú",
+          "Value": "Đây là ghi chú cho đối tượng"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tội danh",
+          "Value": "Xâm phạm trật tự quản lý hành chính"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tội danh",
+          "Value": "Tội trốn tránh nghĩa vụ quân sự"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tiền án, tiền sự",
+          "Value": "Tiền án"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Diện đối tượng quản lý",
+          "Value": "Theo dõi"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tình trạng sử dụng chất ma tuý",
+          "Value": "Nghiện"
+        }
+      ],
+      "Data_Edit": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "ĐỐI TƯỢNG 210504"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "CMND/ CCCD/ Hộ chiếu",
+          "Value": "2105202402"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Giới tính",
+          "Value": "Nữ"
+        },
+        {
+          "TypeOf": "date-list",
+          "Label": "Ngày sinh",
+          "Value": "'1', 'Tháng 1', '2001'"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Tuổi",
+          "Value": "23"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tuổi",
+          "Value": "20-24"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Dân tộc",
+          "Value": "Thái"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tôn giáo",
+          "Value": "Phật giáo"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nguyên quán",
+          "Value": "Tỉnh An Giang"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Quốc tịch",
+          "Value": "Việt Nam"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Thuộc nhóm đối tượng",
+          "Value": "Nhóm đối tượng cần chú ý"
+        },
+        {
+          "TypeOf": "input",
+          "Label": "Số điện thoại",
+          "Value": "0357894561"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nghề nghiệp",
+          "Value": "Không nghề nghiệp"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Trình độ học vấn",
+          "Value": "Đại học"
+        },
+        {
+          "TypeOf": "textarea",
+          "Label": "Ghi chú",
+          "Value": "Đây là ghi chú cho đối tượng update"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Nhóm tội danh",
+          "Value": "Xâm phạm an ninh quốc gia"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tội danh",
+          "Value": "Tội chống phá cơ sở giam giữ"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tiền án, tiền sự",
+          "Value": "Phạm tội lần đầu"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Diện đối tượng quản lý",
+          "Value": "Chuyên án"
+        },
+        {
+          "TypeOf": "dropdown-btn-text",
+          "Label": "Tình trạng sử dụng chất ma tuý",
+          "Value": "Sử dụng trái phép chất ma túy"
+        }
+      ]
+    }
+  ],
+  "test_DeleteObject": [
+    {
+      "Data": [
+        {
+          "TypeOf": "input",
+          "Label": "Họ và tên",
+          "Value": "ĐỐI TƯỢNG 210505"
+        },
+        {
+          "TypeOf": "Image",
+          "Label": "Ảnh chính",
+          "Value": "GuongMat_DoiTuong.png"
+        }
+      ]
+    }
+  ]
+}

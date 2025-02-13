@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<environment>
+  <parameter>
+    <key>Tenant</key>
+    <value></value>
+  </parameter>
+  <parameter>
+    <key>Tenant Version</key>
+    <value></value>
+  </parameter>
+  <parameter>
+    <key>Source Code Version</key>
+    <value></value>
+  </parameter>
+</environment>

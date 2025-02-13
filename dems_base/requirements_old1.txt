@@ -1,0 +1,11 @@
+allure_python_commons==2.13.2
+Appium_Python_Client==3.2.1
+openpyxl==3.1.2
+pandas==1.5.3
+parametrize_from_file==0.20.0
+Pillow==11.1.0
+PyAutoGUI==0.9.53
+PyAutoGUI==0.9.54
+pytest==8.0.0
+selenium==4.28.1
+webdriver_manager==3.8.5
